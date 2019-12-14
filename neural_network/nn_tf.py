@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt 
 import tensorflow as tf 
 
-output_dir = "output/"
+output_dir = ".\output\"
 
 def dataProcess_X(rawData):
     if "income" in rawData.columns:
@@ -29,9 +29,9 @@ def dataProcess_Y(rawData):
     return Data_y
 
 if __name__ == "__main__":
-    trainData = pd.read_csv("../data/adult_train.csv")
-    testData = pd.read_csv("../data/x_test.csv")
-    ans = pd.read_csv("../data/y_test.csv")
+    trainData = pd.read_csv("..\data\adult_train.csv")
+    testData = pd.read_csv("..\data\x_test.csv")
+    ans = pd.read_csv("..\data\y_test.csv")
 
     x_train = dataProcess_X(trainData).values
     y_train = dataProcess_Y(trainData).values
