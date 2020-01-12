@@ -11,4 +11,9 @@
    This Data set is split into two CSV files, named adult-training.txt and adult-test.txt.
    
 ### Summary
+- Model: LGBM
+- Auc: 0.9286
+- Acc: 0.8775 
 
+### Reference
+- Kaggle: [US Adult Income](https://www.kaggle.com/johnolafenwa/us-census-data)
